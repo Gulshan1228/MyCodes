@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lecture 3</title>
+</head>
+<body>
+    
+
+    <script>
+         /*      //Loops
+                 //For loop
+                 // for(initialization ; Stop condition ; Increment / Decrement){
+                 //    Statement
+                 //}
+
+            //print 1 to 10 in for loop
+            for (let i = 1 ; i <= 10 ; i++ ){
+                console.log(i)
+            } 
+
+                 //while loop
+            let j = 25;
+            while (j <= 30){
+                console.log(j)
+                j++
+            } 
+        */
+            
+
+        /*   // for-of loop -> Used for Arrays/Strings -> values
+        let name = "gulshan singh"
+        for (let i of name ){
+                console.log("value  : ",i)
+            }
+
+            size=0
+            for (let i of name ){
+                size++
+            }
+            console.log("Size of name is : ",size)
+        */
+        
+        
+        // for-in loop -> Used for Objects -> index/keys
+        /*    let student = {
+                name : "gulshan",
+                age : 23,
+                course : "b.tech"
+            }
+            for (i in student){
+                console.log("key : ",i,"& value :",student[i])
+            }
+        */
+            
+
+
+
+        /*    //QUESTIONS 
+            //Even number from 0 to 100
+
+            for ( let i=0 ; i<=100 ; i++){
+                if(i%2==0){
+                    console.log(i)
+                }
+            }
+        */
+
+
+
+
+        /* ********************************************************************   */
+
+            //Strings In Javascript
+
+            let Name = "Gulshan"
+            console.log(Name.length)
+
+            let student = {
+                name : "Gulshan Singh",
+                age : 23
+            }
+            console.log(student.name,"is",student.age,"Years old boy")
+
+            //  Template literals -> A way to have embedded expression in strings created by backtects ``
+            console.log(`${student.name} is now ${student.age} Years old men`)
+
+            //  Escape characters -> /n : gives a new line
+            //                       /t : Gives tab space    ->Counted as one character
+
+    </script>
+</body>
+</html>

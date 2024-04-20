@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript lecture 5 -> Fuctions</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // Functions -> it is a group of code whice is used to do specific tast
+        // it helps to code reusability and minimising Redundancy in the code
+
+    /*    function avg(a,b) {                    //Function defination (parameter1 , parameter2)
+            let avg = (a+b) / 2
+            console.log(`average of ${a} and ${b} is ${avg}`)
+        }
+        avg(50,20);                              //Function call (agrument1 , argument2)
+        
+        function sum(x,y){
+            let s = x+y ;
+            return s
+        }
+        let s = sum(10,15)
+        console.log(s)
+    */
+
+
+
+    /*
+        // Arrow Function -> Compact form of a function
+        // (param1 , param2) => {  Statements  }
+        // let sum = (a,b) => {  Statements  }
+        const multiply = (x , y) => {
+            mul = x*y
+            console.log(`multiply of ${x} and ${y} is ${mul}`)
+        }
+
+        multiply(5,8)           //parameter given to the variable in which function is stored
+    */
+
+
+
+
+    //********************************************************************************************* //
+    //QUESTIONS
+
+    //function to calculate vowels in a string
+    function checkVowel(str){
+        let count = 0;
+        for(let i of str){
+            if(i == "a" || i == "e" || i == "i" || i == "o" || i == "u"){
+                count++
+            }
+        }
+        console.log(`no of vowels in ${str} are ${count}`)
+    }
+
+    checkVowel("gulshan singh")
+
+    let countVowel = (str) => {
+        let count = 0
+        for (let i of str){
+            if(i=="a" || i=="e" || i=="i" || i=="o" || i=="u" ){
+                count++
+            }
+        }
+        console.log(count)
+    }
+
+    countVowel("My name is gulshan")
+
+    </script>
+</body>
+</html>

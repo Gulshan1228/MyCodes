@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4 Arrays</title>
+</head>
+<body>
+    
+
+    <script>
+    /*    
+            // Arrays -> Collection of Similar/Diffrent elements
+        let cities=["delhi" , "gurugram", "hyderabad" ,"pune","Faridabad","palwal"]
+        for (let i=0 ; i < cities.length ; i++ ){        //  here i is the index
+            console.log(cities[i])
+            console.log(cities[i].toUpperCase())
+            console.log("******************")
+        }
+
+        console.log(cities.length);
+
+
+        let heros = ["spiderman","superman","Antman","krishh","shaktiman"]
+        heros[2] = "batman";
+        console.log(heros)
+
+        for (let i of heros){           //For-of loop used in arrays and strings
+            console.log(i)
+        }
+    */
+
+
+
+        // QUESTION OF SIMPLE ARRAY LOOP
+        // Find average marks of a class
+
+    /*    let marks = [85,97,44,37,76,60]
+        sum = 0
+        for(let i of marks){
+            sum=sum+i
+        }
+        console.log(sum / marks.length)
+
+
+        // Question 2
+        // price of 5 items after applying 10% discount on each item
+        
+        let price = [250,645,300,900,50]
+
+        for (let i of price){
+            discounted = i * 0.10
+            price[i] = i - discounted
+        }
+        // console.log(`new price after applying discount : ${NewPrice}`)
+        console.log(price) ;
+    */
+
+    // ********************************************************************** //
+
+
+    /*    //  Arrays Method 
+
+        // push -> add item at the end
+        let students = ['gulshan','Ankit','mohit']
+        students.push("manas")
+        console.log(students)
+
+        // pop -> used to delete an item from the end
+        students.pop()
+        console.log(students)
+
+        // toString -> convert the array to the string
+        let student = students.toString()
+        console.log(student)
+
+        //unshift ->add an element at the start of array
+        //shift ->Delete the element at the start of array
+        
+        // Concat -> used to concat/join multiple arrays together
+        moreStudent=['ashish','sunny']
+
+        totalStudents = students.concat(moreStudent)
+        console.log(totalStudents)
+    */
+
+
+        // slice -> create a piece of array and creates a Sub array (part of the array)
+        let marks = [75,85,79,96,35]
+        let num = marks.slice(2,5)  //(start index , end index(exclusive))
+        console.log(num)
+
+        // splice -> insert/remove/replace items in array at any index
+        // splice(start index , Delete count , Replacing(add) elements)
+        marks.splice(2,2,100,200,500,1000)
+        console.log(marks)
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture 6 DOM</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        h1{
+            background-color: violet;
+            text-align: center;
+        }
+        button{
+            background-color: purple;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            margin: auto auto;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            font-size: larger;
+            text-align: center;
+            background-color: skyblue;
+            margin: auto;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is DOM Lecture</h1>
+    <h2>Hello JavaScript</h2>
+
+    <p class="para">BEFORE<-> The Document Object Model (DOM) is a programming interface for HTML document.</p>
+    <p class="para">Gulshan Singh.</p>
+    <button>View More</button>
+
+
+
+    <!-- 
+        // Documen object model--DOM stands for Document Object Model. It is a programming interface that allows us to create,
+         change, or remove elements from the document.
+         We can also add events to these elements to make our page more dynamic 
+    document.getElementById("myid")            //  for id
+    document.getElementsByClassName("myclass")  //  for classes
+    document.getElementsByTagName("p")          //  for tag directly
+
+    But in modern javascript we will use querySelector
+
+    document.querySelector("#box")      // for one element
+    document.querySelectorAll(".box")   // for Multiple/all element -->
+
+
+    <!-- DOM ATTRIBUTES -->
+    <!-- The Additionl information about the element -->
+    
+    <!-- 
+        .getAttribute(attr)                -> To get attribute's value of the element
+        .setAttribute(attr , value)        -> To Set/Change attribute's value with new value
+     -->
+
+     <div class="box">this is div</div>
+     
+</body>
+<script src="js6.js"></script>
+</html>

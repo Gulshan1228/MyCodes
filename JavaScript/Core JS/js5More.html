@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript lecture 5 -> Fuctions</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //   ****** Higher Order Function / Methods***************
+        // Those functions which use other function as a parameter or return the function As output
+        console.log("Higher Order Function / Methods")
+
+    /*    //foreach loop ( Function + Loop )  
+        // callback function -> it is function which is passed as a argument for the another function
+        
+        let marks = [79,75,85,75,85]
+        let sum = 0
+        marks.forEach( function myfunc(value){          // value is each element in the array
+            sum=sum+value                               // pick one by one element and perform the function on it
+        } )
+        console.log(sum)
+
+
+        console.log("*******************************************")
+
+        // Calculating average of marks
+        let avg = 0;
+        marks.forEach( (element) => {
+            avg=avg+element
+            console.log(avg)
+        } )
+        console.log(`average of marks = ${avg}/${marks.length} Which is ${avg / marks.length}`);
+    */
+
+
+        // Questions
+        // print square of every element of an array using foreach loop
+        let items = [2,5,8,6,3]
+        
+        items.forEach( (Element) => {
+            square = Element*Element
+            console.log(square)
+        } )
+        
+        //******************************************************************************
+
+        // Some more methods of array in mordern javascript - HOF/HOM
+        
+        // MAP() method
+        // similar to the for each function and the only difference is it creates a new array
+
+        let newArray = items.map( (element) => {
+            element=element * 2
+            return element
+        } )
+        console.log("new array of itmes : ",newArray);
+
+
+
+        // filter() method
+        // creates a new array of elements that passes a condition/filter
+
+        let numbers = [65,54,68,68,68,7,2,186,8,78,17]
+        let filteredArray = numbers.filter( (element) => {
+            if(element %2 != 0){
+                return element
+            }
+        } )
+        console.log(` the new filtered array is ${filteredArray} `)
+
+        // Reduce() 
+        //-> it reduce an array and return a single value as output
+        let reducedArray = numbers.reduce((previous,current) => {      //phle 1st or second ke sath kaam hoga frr 2nd wala 1st ho jaega or 3rd wala second and last tak yahi chlega frr 1st jo h as output return ho jaega
+            if(previous>current){
+                return previous
+            }else{
+                return current
+            }
+        })
+        console.log(reducedArray)
+
+
+
+        // More PRACTICE QUESTIONS  
+        // 1st -> filter out students who score 80+ marks
+
+        let marks = [86,86,13,85,65,42,99,45,91]
+
+        let topperStudents = marks.filter((element) => {
+            if(element>80){
+                return element
+            }
+        })
+        console.log(topperStudents)
+
+        // 2nd -> take n no. from user and make a array from 1 to n , find sum and product of numbers by using reduced method
+        let n= prompt("enter the value of n : ")
+        let numArray = []
+        let i=1
+        while( i<=n ){
+            numArray[i-1]=i
+            i++
+        }
+        console.log(numArray)
+
+        let sumNum = numArray.reduce( (element1,element2) => {
+            return element1 + element2
+        } )
+        console.log(`sum of n number is : ${sumNum}`)
+
+
+        let prodNum =numArray.reduce( (element1,element2) => {
+            return element1 * element2
+        } )
+        console.log(`Product of n number is : ${prodNum}`)
+
+        
+    </script>
+</body>
+</html>
